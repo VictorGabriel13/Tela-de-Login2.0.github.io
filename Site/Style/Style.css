@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef3f8; /* Cor de fundo */
+  margin: 20px;
+}
+.container {
+  margin-top: 10%;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate; /* Necessário para bordas arredondadas */
+  border-spacing: 0; /* Remove espaços entre células */
+  background: #ffffff; /* Fundo da tabela */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin: 20px 0;
+  border-radius: 15px; /* Arredondamento das bordas */
+  overflow: hidden; /* Garante que o conteúdo respeite o arredondamento */
+}
+
+th, td {
+  text-align: center;
+  padding: 10px; /* Espaço interno */
+  border-bottom: 2px solid #ffffff; /* Linha branca dividindo horizontalmente */
+  border-right: 2px solid #eef3f8; /* Linha vertical para dividir colunas */
+}
+
+/* Caso queira a cor azul #002d64 */
+
+th {
+  background-color: #dc143c; /* Fundo dos cabeçalhos */
+  color: #ffffff; /* Cor do texto do cabeçalho */
+  border-bottom: 2px solid #ffffff; /* Linha branca mais grossa abaixo do cabeçalho */
+  border-right: 1px solid #e0e6ed; /* Linha vertical para os cabeçalhos */
+}
+
+/* Remove a borda direita da última célula */
+th:last-child, td:last-child {
+  border-right: none;
+}
+
+tr:nth-child(even) {
+  background-color: #f9fafc; /* Fundo alternado para linhas pares */
+}
+
+tr:hover {
+  background-color: #eaf3fc; /* Efeito de hover */
+}
+
+tr:last-child td {
+  border-bottom: none; /* Remove a borda inferior da última linha */
+}
+
+/* Ajuste para bordas arredondadas no cabeçalho e rodapé */
+thead tr:first-child th:first-child {
+  border-top-left-radius: 15px;
+}
+
+thead tr:first-child th:last-child {
+  border-top-right-radius: 15px;
+}
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 15px;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 15px;
+}
+caption {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}

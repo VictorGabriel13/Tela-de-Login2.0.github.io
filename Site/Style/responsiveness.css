@@ -1,0 +1,78 @@
+/* Layout padrão (desktop) já definido acima */
+
+/* Para tablets (telas de largura entre 600px e 1024px) */
+@media screen and (max-width: 1024px) {
+    .login-page {
+        width: 50%;
+        left: 25%;
+        top: 30%;
+    }
+
+    .matricula,
+    .senha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 5px 12px;
+    width: 75%;
+    max-width: 400px;
+    border: 3px solid #E5E5E5E5;
+    border-radius: 20px;
+    background-color:#fafafa;
+    box-sizing: border-box;
+    }
+
+    #login-button {
+        width: 60%;
+    }
+    #matricula,
+    #senha {
+        font-size: 20px;
+    }
+
+    .material-symbols-outlined {
+        width: 10%;
+    }
+}
+
+/* Para smartphones (telas menores que 600px) */
+@media screen and (max-width: 600px) {
+    .login-page {
+        width: 90%;
+        left: 5%;
+        top: 25%;
+        padding: 10px;
+    }
+
+    .matricula,
+        .senha {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px auto;
+        padding: 5px 12px;
+        width: 80%;
+        max-width: 400px;
+        border: 3px solid #E5E5E5E5;
+        border-radius: 20px;
+        background-color:#fafafa;
+        box-sizing: border-box;
+        }
+
+    #login-button {
+        width: 60%;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    #matricula,
+    #senha {
+        font-size: 14px;
+    }
+
+    .material-symbols-outlined {
+        width: 10%;
+        font-size: 20px;
+    }
+}
